@@ -10,7 +10,7 @@ tape('should respond hello', (t) => {
   jsonist.get(urlBase, (err, body) => {
     if (err) t.error(err)
 
-    t.equal(body.msg, 'hello')
+    t.equal(body.msg, 'hello user_agent')
     t.end()
   })
 })
